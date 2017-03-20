@@ -1,0 +1,50 @@
+function togglewidget(a){if(jQuery("#widb-expand-open").is(":visible")&&a=="en"){jQuery(".wgt-sub-area > .communicationCentre-wgt-sub-area-data").show("fast");
+jQuery(".wgt-main-expand").html('<button id="widb-expand-close" type="button"  onclick="togglewidget(\'en\')"  class="expand-close">Less</button><a id="wida-expand-close" onclick="togglewidget(\'en\')" style="expand-close">Less</a>')
+}else{if(jQuery("#widb-expand-close").is(":visible")&&a=="en"){jQuery(".wgt-sub-area > .communicationCentre-wgt-sub-area-data").hide("fast");
+jQuery(".wgt-main-expand").html('<button id="widb-expand-open" type="button"  onclick="togglewidget(\'en\')" class="expand-open">More</button><a id="wida-expand-open" onclick="togglewidget(\'en\')" style="expand-open" >More</a>')
+}else{if(jQuery("#widb-expand-open").is(":visible")&&a=="fr"){jQuery(".wgt-sub-area > .communicationCentre-wgt-sub-area-data").show("fast");
+jQuery(".wgt-main-expand").html('<button id="widb-expand-close"  type="button"  onclick="togglewidget(\'fr\')"  class="expand-close">R&eacute;duire</button><a id="wida-expand-close" onclick="togglewidget(\'fr\')" style="expand-close">R&eacute;duire</a>')
+}else{if(jQuery("#widb-expand-close").is(":visible")&&a=="fr"){jQuery(".wgt-sub-area > .communicationCentre-wgt-sub-area-data").hide("fast");
+jQuery(".wgt-main-expand").html('<button id="widb-expand-open"  type="button"  onclick="togglewidget(\'fr\')" class="expand-open">D&eacute;velopper</button><a  id="wida-expand-open"  onclick="togglewidget(\'fr\')" style="expand-open" >D&eacute;velopper</a>')
+}}}}}$j(document).ready(function(){var b=$j(".expandedContent");
+var c=$j(".collapsedContent");
+var d=$j(".controlForExpandText");
+var a=$j(".controlForCollapseText");
+b.hide();
+a.hide();
+$j(".toggleControl").click(function(){b.slideToggle(400);
+c.slideToggle(400);
+d.toggle();
+a.toggle();
+return false
+})
+});
+function postMessageStatus(a){if(a.length>0&&(a.indexof("passthru")!=-1)){actionMessageStatus(a)
+}else{updateMessageStatus()
+}return false
+}function updateStatusAndRedirectTPUrlInSW(a){if(a.length>0){actionMessageStatus(a)
+}return false
+}function moreCards(){document.getElementById("lessCards").style.display="block";
+document.getElementById("moreCards").style.display="none"
+}function lessCards(){document.getElementById("lessCards").style.display="none";
+document.getElementById("moreCards").style.display="block"
+}function sectionToggleClass(c){var b=document.getElementsByClassName(c);
+for(var a=0;
+a<b.length;
+a++){if(b[a].style.display=="none"){b[a].style.display="block"
+}else{b[a].style.display="none"
+}}}function openLegal(a){document.getElementById("legalContent"+a).style.display="block";
+$j("#legalContent"+a).find(".legalButtons").find(".ctaLink").attr("tabindex","0");
+$j("#legalContent"+a).find(".legalButtons").find(".ctaLink").focus()
+}function closeLegal(a){document.getElementById("legalContent"+a).style.display="none"
+}function showLabel(a){document.getElementById("showMustAccept").style.display="block"
+}function getUrlVars(){var e=[],d;
+var b=window.location.href;
+var a=b.slice(b.indexOf("?")+1).split("&");
+for(var c=0;
+c<a.length;
+c++){d=a[c].split("=");
+e.push(d[0]);
+e[d[0]]=d[1]
+}return e
+};

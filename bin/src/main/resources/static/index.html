@@ -1,0 +1,300 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html ng-app="payment" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>Bill payment</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="content-language" content="en" />
+
+    <link rel="shortcut icon" href="https://www1.scotiaonline.scotiabank.com/favicon/scotiabank.ico" />
+    <link rel="Bookmark" href="https://www1.scotiaonline.scotiabank.com/favicon/scotiabank.ico" />
+
+    <link rel="stylesheet" type="text/css" media="all" href="./Bill payment_files/loader.css" title="template-css" id="framework_css" />
+    <link rel="stylesheet" type="text/css" media="all" href="my.css" />
+
+    <script type="text/javascript" src="angular.1.4.8-min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="jquery-1.12.4.js"></script>
+    <script type="text/javascript" src="jquery-ui.js"></script>
+</head>
+
+<body ng-controller="PaymentController as paycontrol" id="reverse_c" style="cursor: auto;">
+
+    <div class="page_bg" aria-hidden="false">
+        <div class="page-wrapper">
+
+            <div class="header">
+                <div class="scotia-logo">
+                    <a href="#" title="Scotiabank Homepage" class="scotia-logo-image">
+                        <div class="scotia-logo-img-div-en" role="img" aria-label="Scotiabank Group"></div>
+                    </a>
+                    <span class="scotia-logo-image-bw">
+                        <img src="./Bill payment_files/scotiabank-group-bw.gif" alt="Scotiabank Group" />
+                    </span>
+                </div>
+                <a class="skip-nav" href="#">Skip to main content</a>
+                <div class="header-links">
+                    <ul title="">
+                        <span id="helpCentre_curtainMenu_container">
+                            <li class="var_main_top-links_tab_1">
+                                <a class="var_helpCentre_helpLink ">Help</a>
+                            </li>
+                            <li class="var_main_top-links_tab_2">
+                                <form id="helpCentre_curtainMenuControls_contactform" name="helpCentre_curtainMenuControls_contactform" method="post" action="" target="">
+                                    <a class="var_helpCentre_contactLink " href="#" id="helpCentre_curtainMenuControls_contactform:j_id59" name="helpCentre_curtainMenuControls_contactform:j_id59">
+                                        <span id="helpCentre_curtainMenuControls_contactform:j_id60" class="">Contact</span>
+                                    </a>
+                                </form>
+                            </li>
+                        </span>
+                        <li class="var_main_top-links_tab_3">
+                            <a href="#" id="j_id64" class="c2c_aa_launch_link">
+                                <span>Communications Centre</span>
+                            </a>
+                        </li>
+                        <li class="var_main_top-links_tab_4">
+                            <a href="#" id="j_id69" class="c2c_aa_launch_link">
+                                <span>Manage My Accounts </span>
+                            </a>
+                        </li>
+
+                        <li id="signout_li" class="var_main_top-links_tab_8 header-link-signout">
+                            <div id="to_signout">
+                                <a href="#" class="no-divider c2c_quit_launch_link"><span class="bold red">Sign out</span></a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="clearboth"></div>
+            <div class="header-signon">
+                <span class="date-time-stamp-signon ">Your last sign-on: 	Mar 12, 2017 - 10:22 p.m. ET</span>
+                <a href="" id="j_id86" class="today-activity">Activity on:  Mar 16, 2017 - 11:47 a.m. ET</a><span class="date-time-stamp-created">Page created on  Mar 16, 2017 - 11:47 a.m. ET</span>
+            </div>
+
+            <div class="navigation">
+
+                <div class="nav-top-lvl">
+                    <h2 class="off-screen">Primary Scotia Site Navigation Links</h2>
+                    <ul>
+                        <li class="">
+                            <a href="#" id="j_id91:0:_link" class="c2c_aa_launch_link">
+                                <span id="j_id91:0:j_id93">
+                                    Accounts
+
+                                    <img height="11" width="12" src="./Bill payment_files/whiteHouse.png" alt="Home" />
+
+                                    <br />
+                                </span>
+                            </a>
+                        </li>
+                        <li class="current">
+                            <a href="#" id="j_id91:1:_link" class="c2c_aa_launch_link">
+                                <span id="j_id91:1:j_id97">
+                                    Bill Payments <span id="j_id91:1:_selectedSpan" class="off-screen">current section</span>
+                                    <br />
+                                </span>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="#" id="j_id91:2:_link" class="c2c_aa_launch_link">
+                                <span id="j_id91:2:j_id97">
+                                    Transfers
+
+                                    <br />
+                                </span>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="#" id="j_id91:3:_link" class="c2c_aa_launch_link">
+                                <span id="j_id91:3:j_id97">
+                                    Products &amp; Services
+
+                                    <br />
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="clearboth"></div><span id="secondLevelMenuGr">
+
+                    <div class="nav-sub-lvl">
+                        <ul>
+                            <li class="current">
+                                <a href="#"><span>Pay Bills</span></a>
+                            </li>
+                            <li class="">
+                                <a href="#"><span>History</span></a>
+                            </li>
+                            <li class="">
+                                <a href="#"><span>Payment Inquiry</span></a>
+                            </li>
+                            <li class="">
+                                <a href="#"><span>epost</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </span>
+            </div>
+
+            <div class="content">
+                <div class="dataview">
+                    <div id="bp-form-data" class="new-form-container">
+                        <div class="new-form-blankarea margin-top-10">
+                            <div style="margin-left:10px">
+                                <h2>New payment</h2>
+                                <br />
+                                <p>Please, fill the required information for your payment.</p>
+                            </div>
+
+                            <form name="myForm" ng-submit="submitPayment()">
+                                <table>
+                                    <tr>
+                                        <td>Funds account</td>
+                                        <td>
+                                            <select name="account"
+                                                    required="required"
+                                                    ng-model="newPayment.account"
+                                                    ng-options="account.id as account.description for account in data.accounts">
+                                                <option value=""></option>
+                                            </select>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Payee service</td>
+                                        <td>
+                                            <!--https://docs.angularjs.org/api/ng/directive/select-->
+                                            <select name="payee"
+                                                    required="required"
+                                                    ng-model="newPayment.payee"
+                                                    ng-options="payee.id as payee.name for payee in data.payees">
+                                                <option value=""></option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Payed Amount</td>
+                                        <td>
+                                            <input type="text"
+                                                   ng-model="newPayment.amount"
+                                                   required="required"
+                                                   numbers-only="numbers-only" /> CAD
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Payment date</td>
+                                        <td>
+                                            <input type="date"
+                                                   id="exampleInput"
+                                                   name="input"
+                                                   ng-model="newPayment.date"
+                                                   min="2017-01-01"
+                                                   max="2017-12-31"
+                                                   required=required />
+                                            <div role="alert">
+                                                <span class="error"
+                                                      ng-show="myForm.input.$error.required">
+                                                    Required!
+                                                </span>
+                                                <span class="error"
+                                                      ng-show="myForm.input.$error.date">
+                                                    Not a valid date!
+                                                </span>
+                                            </div>
+
+<!--    
+                                             <br />
+                                            <h3>Debugging info</h3>
+                                            <tt>newPayment.account: {{newPayment.account}}</tt><br />
+                                            <tt>newPayment.payee: {{newPayment.payee}}</tt><br />
+                                            <tt>newPayment.amount: {{newPayment.amount}}</tt><br />
+                                            <tt>newPayment.date = {{newPayment.date | date: "yyyy-MM-dd"}}</tt><br />
+                                            <br />
+                                            <h3>Validation info</h3>
+                                            <tt>myForm.input.$valid = {{myForm.input.$valid}}</tt><br />
+                                            <tt>myForm.input.$error = {{myForm.input.$error}}</tt><br />
+                                            <tt>myForm.$valid = {{myForm.$valid}}</tt><br />
+    -->
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>
+                                            <input class="payment-submit" type="submit" value="Submit" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>
+                                            <div style="color: #4F8A10;background-color: #DFF2BF; padding: 10px" ng-show="confirmed">
+                                                Your payment was succesfully submitted.<br />
+                                            </div>
+                                            <div style="color: #D8000C;background-color: #FFBABA; padding: 10px" ng-show="errorreceived">
+                                                There was a problem with your payment. Please try again later.
+                                            </div>
+
+                                            <br /><br />
+
+                                            <div ng-show="confirmed">
+                                                <h3>Payment Confirmation</h3>
+                                                <table>
+                                                    <tr>
+                                                        <td><b>Account</b></td>
+                                                        <td>{{ submittedPayment.account }}</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><b>Payee</b></td>
+                                                        <td>{{ submittedPayment.payee }}</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><b>Amount</b></td>
+                                                        <td>{{ submittedPayment.amount }} CAD</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><b>Date</b></td>
+                                                        <td>{{ submittedPayment.date | date: 'MM-dd-yyyy HH:mm'}}</td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>
+                                            <h3>Recent payments</h3>
+                                            <table>
+                                                <thead>
+                                                    <tr>
+                                                        <th><span>Account </span></th>
+                                                        <th><span>Payee </span></th>
+                                                        <th><span>Amount	</span></th>
+                                                        <th><span>Date	</span></th>
+                                                    </tr>
+                                                </thead>
+                                                <tr ng-repeat="payment in payments">
+                                                    <td>{{ payment.account }}</td>
+                                                    <td>{{ payment.payee }}</td>
+                                                    <td>{{ payment.amount }}</td>
+                                                    <td>{{ payment.date | date: 'MM-dd-yyyy HH:mm'}}</td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="clearboth"></div>
+            <div class="footer-centered">
+                <div id="pageId" class="pageID">
+                    2017
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

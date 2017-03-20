@@ -1,0 +1,248 @@
+@media print{body{background-color:#fff;background:0;color:#000;width:100%;font-family:Arial,sans-serif;_margin:10px;font-size:90%}
+p,a,.negative,.standard-table td.negative,.wgt-sub-area-data ul li,.wgt-main-header-title{color:#000;font-family:Arial,sans-serif}
+.dataview,.bp-form-data,.two-column.var_manage_accounts,.bp-recurring-form-data,.trns-form-data,.westernunion-form-data{width:100%}
+.var_manage_accounts.two-column .right-column{width:100%;margin-left:0}
+.header .scotia-logo .scotia-logo-image-bw{display:block}
+.header{height:51px}
+.var_manage_accounts .overflow,.first-time-user-flow .overflow,.overflow{height:auto;overflow:visible;border:0;margin-left:0;padding-left:0}
+.var_manage_accounts.two-column .right-column p{margin-left:0}
+.additional-details{display:block;margin-top:10px}
+.date-stamp{display:block;color:#000;font-size:15px;font-weight:bold;position:absolute;position:static\9;*position:absolute;right:0;top:30px}
+a.skip{display:none}
+.header .scotia-logo .scotia-logo-image{display:none}
+.header-links{display:none}
+.header-signon .date-time-stamp-signon{display:none;height:0;width:0}
+.header-signon .date-time-stamp-created{display:inline-block;float:right;position:relative;top:-30px;height:auto;width:auto}
+.today-activity{display:none}
+.navigation{display:none}
+.nav-sub-lvl{display:none}
+.account-icon-holder,.icon-holder,.branding-holder-logo{display:none}
+.nav-third-lvl{display:none}
+.quick-menu-wrapper{display:none}
+.standard-table td.icon{display:none}
+.siderail{display:none;height:0;width:0;visibility:hidden}
+.footer-links{display:none}
+.wgt-main-wrapper{display:none}
+.dataview .wgt-main-wrapper{display:block;overflow:visible;clear:both}
+.var_wdgt_most_active .overflow{height:auto}
+button.sort-down-off,button.sort-down-on,button.sort-up-on,button.expand-open,button.sort-up-off,button.sendmail,button.primary-delete{background-image:none}
+.primary-button,.secondary-button,.primary-delete,.center-page,.show-hide-button,.container2-send-message,.button.secondary-button,.data-pair input.secondary-button,.button.primary-button{display:none}
+.standard-table th.icon_position{align:centre}
+.wgt-main-header{border-top:0;clear:all}
+.wgt-main-wrapper-topleft,.wgt-main-wrapper-topright,.wgt-main-wrapper-bottomleft,.wgt-main-wrapper-bottomright,.toolbar,.transfers-pending-payments-footer{display:none}
+.var_manage_accounts .left-column,.siderail{display:none}
+.var_planning .left-column,.siderail,.right-column-container{display:none}
+.left-column.fullwidth{display:block}
+.pageID{display:block}
+.wgt-main-wrapper-right-bdr{background:0}
+#helpCurtain,.helpCurtain,.whitebg,.search,.help{display:none;height:0;width:0;visibility:hidden}
+.page-wrapper,.page_bg{background:none repeat-x scroll 0 0 #fff;width:100%;*width:99%}
+.pending-module-wrapper{width:100%}
+.margin-top-20 img{visibility:hidden}
+.var_accounts .section-container .section-title{background:none repeat-x scroll 0 0 #fff}
+.float-right{display:none}
+h1{display:block;margin:20px 0 10px 0;font-family:Arial,sans-serif;color:#000}
+h2,h3,.search h3,h4,h5{font-family:Arial,sans-serif;color:#000}
+.additional-details h3{border-top:1px solid #000;border-bottom:1px solid #000;background:none repeat-x scroll 0 0 #fff!important;margin-left:0;padding-left:0;color:#000}
+.form-section h3,.regular-data-holder h3{padding-left:0}
+h3.h3head,h3.table-caption,h4.table-caption{color:#000}
+h3.table-caption span.other{*display:none}
+.var_manage_accounts.two-column .right-column h4{padding-left:0}
+.static-content h1{display:block;margin:20px 0 10px 0;font-family:Arial,sans-serif;color:#000}
+.static-content h3{font-style:normal;font-family:Arial,sans-serif;color:#000}
+.branding-holder h3,.regular-data-account-details h3,.rounded-corners-container h3,.pending-module-wrapper h3,.cms-info-container h3,.form-section h3{font-family:Arial,sans-serif;color:#000}
+table{width:100%;border:1px solid #000}
+table.standard-table{width:100%;page-break-inside:auto}
+thead{display:table-header-group}
+tfoot{display:table-footer-group;position:relative}
+.standard-table thead th,.standard-table thead tr,.standard-table thead tr.standard-table-header,.standard-table thead tr.standard-table-header th,.standard-table thead tr.standard-table-header td,.standard-table tfoot tr,.standard-table tfoot tr td,.standard-table tfoot tr th,.standard-table tfoot tr th.tfooter-header,.standard-table th,.standard-table td{border-top:1px solid #000;border-bottom:1px solid #000;background:none repeat-x scroll 0 0 #fff}
+.standard-table tr.active-row,.standard-table tbody tr.active-row th,.two-column .zebra-line{background:none repeat-x scroll 0 0 #fff}
+.standard-table caption{color:#000;font-family:Arial,sans-serif;padding-left:0;display:table-header-group}
+.standard-table caption.hide-elem{display:none}
+.standard-table tfoot{border-bottom:1px solid #000}
+.standard-table th.delete{display:none}
+table.quote-table{border:0}
+.standard-table td.icon_position{*text-align:center}
+.var_manage_accounts.two-column .section-container .data-label-pair{display:block!important}
+table.beneficiary-table{width:90%}
+.regular-data-holder{float:none}
+.full-width{width:100%}
+.ui-datepicker{display:none;height:0;width:0;visibility:hidden}
+.search-module-wrapper-fp,.search-module-wrapper,.search-module-wrapper{width:auto;*width:100%;float:none}
+.show-more-options,.search-module-wrapper-elem-holder,.search-module-wrapper-elem-holder-bttn{float:none}
+.full-width table{font-size:75%;*font-size:100%}
+.full-width .regular-data-holder table.standard-table{*font-size:85%}
+.regular-data-holder table.standard-table{width:100%}
+.regular-data-account-details{float:none}
+.pagination-table{float:none}
+.pagination-table table.standard-table{float:none;width:100%;*padding:0;font-size:90%}
+.pagination-table table.standard-table colgroup col{width:auto}
+.pagination-table table.standard-table thead tr th div.sort-category{float:none;padding:0;margin:0}
+.vieworders-form-data{width:auto}
+.pagination-wrapper{float:none;clear:both;width:auto}
+.var_manage_accounts .right-column.fullwidth table.standard-table tr{font-size:120%!important}
+table.standard-table.transTableTop{*font-size:110%}
+#transHistory table.standard-table{width:100%;font-size:90%;clear:all;margin-top:20px;margin:0;padding:0;float:none}
+#transHistory table.standard-table colgroup col{width:auto}
+.aa-module-search{float:left}
+.aa-module-search .search-block{float:left;padding:0}
+.two-column.var_accounts{width:100%}
+.var_accounts table.standard-table{width:100%;float:none;font-size:90%}
+.bp-form-data,.transfer-preview-form-data,.trns-form-data,.form-data{border-left:none;border-right:0}
+.bp-form-data .standard-table img,.search-module-wrapper-elem-holder img{visibility:hidden}
+.transfer-preview-form-data{float:none!important;width:70%}
+.mng-full-form-data .form-section{float:left!important}
+.bp-recurring-form-data{margin-top:30px}
+.trns-form-data,.search-module-wrapper{background:none repeat-x scroll 0 0 #fff}
+.two-column.var_accounts,.static-content,.left-column,.data-lest,.mng-full-form-data .form-section label,.var_manage_accounts.two-column .right-column h3,.ftf-form-data h2,.first-time-user-flow h3,.first-time-user-flow p{margin-left:0}
+.two-column{margin-left:0;width:78%}
+.data-lest dt{padding-left:0;background:0}
+.data-lest dd{padding-left:0}
+.regular-data-account-details{padding-left:0}
+.regular-data-account-details select{display:none}
+.regular-data-holder h3{margin:10px 0 0 0}
+.wgt-main-wrapper{padding-left:0;background:0}
+.wgt-main-header-title{padding-left:0;margin-top:5px}
+.right-column{padding-left:0}
+.wgt-sub-area-data{padding-left:0;margin-top:0}
+.mng-form-data .right-column.form{margin-left:185px}
+.trans-interac-instructions{margin-right:275px}
+.trade-quote-wrapper{width:auto;*margin-top:-300px}
+.trade-form-wrapper equities{width:40%}
+.trade-form-wrapper ipos{width:40%}
+.two-column .data-label-pair{display:block!important;border-bottom:1px solid #ccc}
+.fieldset.form-buttons{padding:5px}
+.pending-module-wrapper h3{margin-top:16px}
+.dataview.legal-data .right-column{width:100%;margin:20px 0 0 5px!important}
+.legal-data .right-column ul li{list-style:none}
+.intercept img.float-right{visibility:hidden}
+.cta-mktg,.cta-mktg:link,.msg-CTA-Button-Med{visibility:hidden}
+.two-column .data-label-pair span{color:#000}
+.innerlist{margin-left:-7px}
+.ps-right-column-fullwidth{float:left}
+button.primary-button,button.secondary-button{background:0;color:#000}
+.cms-info-container{border:1px solid #000;margin-top:5px}
+.ewa-bucket ul.info{border:2px solid #ccc}
+.ewa-bucket ul.error li img,.ewa-bucket ul.success li img,.ewa-bucket ul.info li img,.checkmark img,.crossMark img,.right-text img,.access-code-h3 img,.transfers-access-code-h3 img,.transfer-history-account-Brand img,.wgt-main-header h3 img,.transfers-history-search-wrapper div.label img,.standard-table caption img{visibility:hidden}
+.ewa-bucket ul.warning li,.ewa-bucket ul.error li{background:0}
+.message-block img,.optional-text img,.data-pair img,.help-link img,.standard-table tbody th img,.standard-table thead th img,.standard-table tbody tr td img,.cmn-symbol-search-icon img,.standard-table td.center img,.trade-stepin-h3-clone img,.trade-form-elem-dpicker img,.calculate-price-img img,.standard-table td.number img{visibility:hidden}
+.banner img,.float-right img,.var_planning img,.ps-right-column-fullwidth img{visibility:hidden}
+.bp-recurring-form-data input.date,.bp-form-data input.date,.bp-form-data input.amount,.form-section input.error,.grn-border,.ylw-border,.red-border,.priority-notification,input.error,select.error{border:2px solid #ccc}
+.ewa-bucket ul.error,.ewa-bucket ul.success,.search-module-wrapper-elem-holder input{border:2px solid #ccc}
+.prospectus-info-wrapper1 .step1,.prospectus-info-wrapper1 .step2,.ccv-app-steps ul li.ccv-app-steps-active{color:#000}
+.ewa-bucket ul.warning,.ewa-bucket ul.info,.ewa-bucket ul.error{width:70%;border:2px solid #ccc}
+.quote-module .ewa-bucket ul.warning{width:90%;border:2px solid #ccc}
+.ewa-bucket ul.info li,.refresh-quote,.ewa-bucket ul.success li{background-image:none}
+.pagination-wrapper-totals{border-bottom:2px solid #ccc}
+.transfers-access-code-h3,.trade-stepin-h3-clone,.mng-form-data .form-section label.red-font{color:#000}
+.negative-border,.positive-border,.quote-module-details-table,.trade-form-elem input.error,.input{border:1px solid #ccc;color:#000}
+.quote-module-details-data-wrapper,.vo-expand-data-wrapper .positive-border{border:0}
+.red-text{color:#000!important}
+.standard-table td.positive,.red-text,.positive,span.red,.form-data-account-level,.wgt-sub-area a.active,.var_wdgt_most_active .wgt-main-header h3 a,.priority-notification-title h3,.priority-notification ul li,.var_wdgt_asset_allocation_optimizer .wgt-main-header h3{color:#000}
+.pagination-wrapper-elem span.current,.pagination-wrapper-elem span.current a{color:#000}
+.pagination-wrapper-elem span.current,.pagination-wrapper-elem span.current a{color:#000;font-weight:bold}
+.ui-datepicker-trigger,.cmn-symbol-search-icon,.pagination-wrapper.table-paginaiton,.ccv-toolbar-print{display:none!important}
+.radio-table{border:0}
+.radio-button-parent-label.brokerageAgreementsSummary{color:#000}
+.ui-datepicker-trigger,.cmn-symbol-search-icon{display:none}
+.msg-PageWrapper h2,.msg-PageWrapper h3,.msg-PageWrapper a,.msg-PageWrapper a:visited{color:#000}
+.float-left img{visibility:hidden}
+.msg-YRTYT-en,.msg-ContentWrapper img{display:none}
+.msg-PageWrapper img{visibility:hidden}
+.msg-SideRailRed a,.msg-SideRailRed a:visited,.msg-SideRailRed a:hover{text-decoration:none}
+.radio-table tbody tr td{border-top:0}
+fieldset.itrade-services .data-pair{width:100%}
+.quote-module-details-table{width:100%}
+.form-data-holder{margin-top:20px}
+.data-lest dd{margin-top:5px}
+.additional-details p{color:#000}
+.standard-table tr.total{border-top:1px solid #000;border-bottom:1px solid #000}
+.var_manage_accounts.two-column .section-container .data-label-pair span,.var_manage_accounts.two-column .section-container .section-title-pair h4,.var_manage_accounts .data-label-pair span,.var_manage_accounts .section-title-pair h4{color:#000}
+.rounded-corners-container,.var_manage_accounts.two-column .section-container .section-title,.var_manage_accounts .section-title,.form-data{background:none repeat-x scroll 0 0 #fff;margin:5px}
+.pending-module-wrapper,.search-module-wrapper-fp,.expand-content,.bp-edit-header-row,.bp-form-data,.transfer-preview-form-data,.bp-recurring-form-data,.form1-module-wrapper,.message-block,.standard-table td.vo-expand-table-row-td{background:none repeat-x scroll 0 0 #fff}
+.cms-info-container,.show-more-options,.common-right-arrow,.symbol-search,.msg-ContentWrapper-SideRailRed,.mng-form-data .form-section .ins-con{background:0}
+.msg-BulletList li,.msg-warn-Header,.msg-Header,.msg-DivbarRed,.trans-interac-instructions ul li,.icon-backarrow,.signon-form-block-interachdr,.signon-form-block-footer,.confirmation-icon-text,.form-data-account-level{background-image:none}
+.var_manage_accounts.two-column .section-container .section-title-pair,h3.h3head,.trans-interac-instructions,.signon-form-block,.positive-border,.quote-module-header,.quote-module-second-level,.loading-quote-module,label.error{background:none repeat-x scroll 0 0 #fff}
+.pending-delete-review-header,.negative-border,.quote-module-details-table .quote-table,.pending-delete-review-footer,.sec-hdr h3,.ccv-app-steps{background:none repeat-x scroll 0 0 #fff}
+.nav-ps-third-lvl,.ps-footer-block,.ps-app-titlebar,.third-level-nav ul,.footermenu-bottom,.push-talk-content,.push-talk-head,.search,.star-rating,.star-rating a:hover,.star-rating a:active,.star-rating a:focus,.star-rating .current-rating{background:none repeat-x scroll 0 0 #fff!important}
+.ccv-app-steps .ccv-app-steps-notvisited .ccv-app-steps-bullet,.ccv-app-steps ul li.ccv-app-steps-active,.ccv-app-steps ul li.ccv-app-steps-notvisited,.ccv-app-steps ul li,.section-2items-container .section-2items-header{background:none repeat-x scroll 0 0 #fff!important}
+.product-container-01 h3.mobile_heading01,.product-container-01 h3.mobile_heading02,.product-container-01 h3.mobile_heading03,.product-container-01 .product-text-container,.section-3items-container .section-3items-header,tr.expand-table-row td .mng-questions{background:none repeat-x scroll 0 0 #fff!important}
+h3.ps-footer-faq,h3.ps-footer-contact,h3.ps-footer-chat,.ps-app-steps ul li.active,.ps-app-steps ul li.ps-app-steps-notvisited,.ps-app-titlebar,.ps-app-steps,.ps-app-steps ul li,.innerlist,.push-talk-content-head,.priority-notification-title h3{background-image:none!important}
+.ps-index-cat-block-elem-text,div.ps-footer-contact,div.ps-footer-chat,.ps-app-steps .active .ps-app-steps-bullet,ul.ps-footer-faq li .ps-footer-faq-li-num,.credticard-breakdown-desc-title,.ccv-app-steps .ccv-app-steps-active .ccv-app-steps-bullet{color:#000!important}
+.nrrspCashSelect img,.ps-wm-elem-logo img,.var_manage_accounts img{visibility:hidden}
+ul#topnav li a.current{background:none repeat-x scroll 0 0 #bfbfbf!important}
+.cc-compare-results .standard-table thead th.red{color:#000!important}
+.show-more-options{background-image:none!important}
+.ccv-pageid{margin:5px}
+.loading-quote-module.mf{display:none}
+.var_manage_accounts input.two-digit .input{color:#000!important}
+ul.regular-bullet{margin-left:0;padding-left:0;list-style:disc inside none}
+ul.regular-bullet li{background:0;margin-left:0;padding-left:0;list-style:disc inside none;display:list-item}
+.sitemap li ul.float-none li,.sitemap li ul li ul li{background:0;list-style:disc inside none;display:list-item;padding-left:0;color:#000}
+.ps-app-steps ul li.active,.third-level-nav ul li.current a,.push-talk-content h1{color:#000!important}
+.credticard-breakdown-desc-title{color:#000}
+.ps-app-mkt-banner h3{color:#000}
+.ps-left-column,.dataview.legal-data .left-column{display:none}
+.ps-right-column{margin-left:0;width:100%}
+.ps-app-mktgimg img,.innerlist img,.ps-app-titlebar img,.ps-app-form-elem-title img,.ps-app-form-elem-radio-group img,.category-breakdown-elem img,.cms-container-category-creditcards img{visibility:hidden}
+.push-talk-content .ewa-bucket ul.warning{border:2px solid #ccc}
+.overflow,.first-time-user-flow,#content-wrapper-user,.ftf-form-data,.dataview,.fullwidth,.var_manage_accounts,.form-section,.mng-full-form-data{overflow:visible!important;float:none!important}
+.content{float:none!important}
+.help{display:block}
+.rate-this,.contact-nav ul li.current a{color:#000}
+.var_wdgt_asset_allocation_optimizer .wgt-sub-area-data div{width:25%}
+.hide-for-print{display:none}
+.asset-allocation-print.asset-allocation .sections{width:45%;float:left}
+.asset-allocation-print.asset-allocation h4{margin:10px 0 0 0}
+.asset-allocation-print.asset-allocation .diagrams{width:53%;float:right;text-align:center}
+.asset-allocation-print.asset-allocation .diagrams .diagram{float:left;margin-right:2px;text-align:center;width:170px}
+.asset-allocation-print.asset-allocation .diagrams p{margin:0 0 5px 10px;text-align:left}
+.asset-allocation-print input{width:100px;width:70px\9;overflow:visible;text-align:right;border:1px solid #FFF;font-size:1em;color:#333}
+.asset-allocation table{border:1px solid #ccc;border-collapse:collapse}
+.asset-allocation table caption{display:none}
+.asset-allocation table th{padding:5px;background-color:#ccc}
+.asset-allocation table tbody tr:first-child{background-color:#eee}
+.asset-allocation table td{border:1px solid #ccc;text-align:right;padding:5px;font-size:.9em}
+.asset-allocation caption{text-align:left}
+.asset-allocation .diagrams-pictures img{width:170px;_width:170px}
+.diagramC img{padding-top:15px}
+.footer{border-top:1px solid #ccc;color:#666;float:left;font-size:.9em;margin-top:5px;padding:10px 0;width:100%}
+.pageID{clear:both;color:#999;float:right;margin:10px 0 0;padding:0;*width:auto}
+.profile h4{clear:both;display:block;margin-top:20px}
+.profile .allocation-image{float:left;width:45%}
+.profile .profile-details{float:right;width:55%}
+.show-for-print{display:block;margin:20px}
+.diagrams-pictures .diagramB img.print,.diagrams-pictures .diagramD img{margin-top:20px}
+img.itrade-logo{position:absolute;top:0;right:0}
+.subscription-page1 h2 span,.subscription-page1 table td{color:#000}
+}
+h5,.cash-allocation h3,.cash-allocation-tool .right-column .step-wrapper h4,.cash-allocation-tool .right-column .step-wrapper h4 a,.cash-allocation-tool .right-column .step-wrapper h4 a:visited,.cash-allocation-tool .left-column .step-wrapper .currentBalance,.cash-allocation-tool .left-column .step-wrapper table.model caption,.cash-allocation-tool .left-column .step-wrapper table.model tfoot td,.cash-allocation-tool .left-column .step-wrapper h4,.cash-allocation-tool .right-column .benefits h5{color:#000}
+.cash-allocation,.cash-allocation-tool,.cash-allocation-tool .left-column .step-wrapper .account-wrapper{float:none}
+.cash-allocation-tool .left-column .step-wrapper table caption{position:static}
+#alsowanttopanel .wgt-main-wrapper{display:none;width:0;height:0}
+.no-print{display:none;overflow:hidden}
+.ui-widget-overlay{display:none;height:0;width:0;visibility:hidden}
+.ui-dialog.new-form-dialog{display:block!important;left:0!important;top:0!important;position:absolute;width:100%!important;margin-top:100px}
+.new-form-dialog{position:absolute!important}
+.new-form-dialog-overflow{height:auto!important;overflow:none;max-height:10000px}
+.new-form-dialog-block .new-form-dialog-hdg img{display:none!important}
+.footer-box{display:none}
+.new-form-dialog-block .new-form-dialog-hdg h3{color:#000!important}
+.new-form-content-block select{display:none!important}
+.bp-overlay-container{clear:both!important}
+.infoalerts-agreement.overflow{overflow:hidden!important;height:100%!important}
+.income-details .aa-module-search.float-right{display:block;width:70%;float:right}
+.income-details .aa-module-search .float-right{display:block}
+.legend-cash{background-color:#e4e3e3;border:1px solid #000}
+.legend-nonCash{background-color:#bebebe;border:1px dashed #000}
+.incomeData .incomeDataValue.cash{background-color:#e4e3e3;color:#000;border:1px solid #000}
+.incomeData .incomeDataValue.nonCash{background-color:#bebebe;color:#000;border:1px dashed #000}
+.income-details .left-column{float:none}
+.income-details .right-column{width:100%}
+.income-details .data-pair.split{margin-top:20px}
+.income-details .forecasted-label{border:medium none;width:auto}
+.income-details .forecasted-label span{background:0}
+.income-details .two-column.top-section .left-column{width:45%;float:left;padding-right:20px}
+.income-details .two-column.top-section .right-column{width:45%;float:right}
+.income-details .currency2{clear:all;width:100%;float:left}
+.incomeData.separator{width:5px}

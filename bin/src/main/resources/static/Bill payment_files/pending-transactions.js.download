@@ -1,0 +1,135 @@
+$j(function(){setMsgTableFocus();
+validateAmount()
+});
+function showStaticMsg(a){targetArray=a.id.split("_");
+finalTarget=targetArray[0]+"_static";
+var b=document.getElementById(finalTarget);
+var d=b.style.display;
+$j("pend-trans-trade-warn").hide();
+if(d=="none"){$j("#"+finalTarget).show()
+}else{$j("#"+finalTarget).hide()
+}return
+}function setMsgTableFocus(){if($j("ul.error").length){$j("ul.error").parent().attr("tabindex","0");
+$j("ul.warning").parent().attr("tabindex","0");
+$j(".ewa-bucket").focus()
+}if($j("ul.success").length){$j("ul.success").parent().attr("tabindex","0");
+$j(".ewa-bucket").focus()
+}}function validateAmtEvtHandler(a){amtInput=$j(this);
+c=amtInput.val().replace(/[^\d\.]/g,"");
+dotIndex=c.indexOf(".");
+if(dotIndex!=-1){var b=c.substr(0,dotIndex+1);
+var d=c.substr(dotIndex+1,c.length);
+d=d.replace(/\./g,"");
+if(d.length>2){d=d.substr(0,2)
+}c=b+d;
+amtInput.val(c)
+}else{amtInput.val(c)
+}}function validateAmount(){$j("input.amount").keyup(validateAmtEvtHandler);
+$j("input.amount").keyup(hideExchgCalc)
+}function hideExchgCalc(){var a=$j("div.exchg-calculation");
+if(a.length){a.remove()
+}}function pickedDate(){pickedDate.date=$j("input.daterange-2-years").val()
+}function setDate(){if(pickedDate.date.length>0){$j("input.daterange-2-years").val(pickedDate.date)
+}}function bindTransaction(){$j(".transaction").click(function(a){if(!$j(".transaction").hasClass("calfullViewOpen")){calFullView(this)
+}});
+$j(".transaction").keypress(function(a){if((a.keyCode?a.keyCode:a.which)==$j.ui.keyCode.ENTER){calFullView(this)
+}});
+$j(document).keyup(function(a){var b=$j(".transaction").hasClass("calfullViewOpen");
+if((a.keyCode?a.keyCode:a.which)==$j.ui.keyCode.ESCAPE&&b){closeFullview()
+}});
+$j(document).click(function(a){if($j(a.target).parents().index($j(".calfullViewOpen "))==-1){if($j(".transaction").hasClass("calfullViewOpen")){closeFullview()
+}}})
+}function closeFullview(){$j(".transaction").removeClass("fade");
+$j(".transaction").find(".detail-row").removeClass("cal-row-ht");
+$j(".transaction").find(".detail-row").removeClass("cal-row");
+$j(".transaction").find(".detail-row").addClass("hide");
+$j(".transaction").find(".details").hide();
+$j(".transaction").find(".group-trans h4").addClass("cal-h4");
+$j(".transaction").removeClass("calfullViewOpen");
+$j(".transaction").find(".popout").removeClass("cal-transaction-popout");
+$j(".transaction").find(".popout").removeClass("cal-popout-Left");
+$j(".transaction-type").addClass("cal-transaction-type");
+$j(".transaction").find(".cal-row-ht").show();
+$j(".title").addClass("cal-title");
+$j(".title").removeClass("cal-transaction-type-title");
+$j(".cal-due").show()
+}function calFullView(d){var b=$j(d).find(".group-trans");
+if(b.length==0){return
+}var a=false;
+if($j(d).hasClass("cal-last-column")){a=true
+}else{a=false
+}$j(".transaction").removeClass("fade");
+$j(".transaction").find(".detail-row").removeClass("cal-row-ht");
+$j(".transaction").find(".detail-row").removeClass("cal-row");
+$j(".transaction").find(".detail-row").addClass("hide");
+$j(".transaction").find(".popout").removeClass("cal-popout-Left");
+$j(".transaction").find(".details").hide();
+$j(".transaction").find(".group-trans h4").addClass("cal-h4");
+$j(".transaction").removeClass("calfullViewOpen");
+$j(".transaction").find(".popout").removeClass("cal-transaction-popout");
+$j(".transaction-type").addClass("cal-transaction-type");
+$j(".transaction").find(".cal-row-ht").show();
+$j(".title").addClass("cal-title");
+$j(".title").removeClass("cal-transaction-type-title");
+$j(".row").find(".details").removeClass("cal-row");
+$j(".transaction").find(".popout").removeClass("cal-transaction-popout");
+$j(".transaction").find(".row .details").hide();
+$j(".transaction").find(".group-trans h4").addClass("cal-h4");
+$j(".transaction").removeClass("calfullViewOpen");
+$j(".transaction").addClass("fade");
+$j(d).removeClass("fade");
+$j(d).find(".popout").addClass("cal-transaction-popout");
+$j(d).find(".detail-row").addClass("cal-row");
+$j(d).find(".detail-row").removeClass("hide");
+$j(d).find(".action").addClass("cal-action-top");
+$j(d).find(".details").children("div").addClass("cal-detail-full-width cal-details");
+$j(d).find(".detail-row .details").show();
+$j(d).find(".cal-row-ht").hide();
+$j(d).find(".group-trans h4").removeClass("cal-h4");
+$j(d).find(".action .primary-button").addClass("cal-primary-button");
+$j(d).addClass("calfullViewOpen");
+$j(d).find(".action input.primary-delete").addClass("cal-margin-25");
+$j(d).find(".title").addClass("cal-transaction-type-title");
+$j(d).find(".transaction-type").removeClass("cal-transaction-type");
+$j(d).find(".title").removeClass("cal-title");
+if(a){$j(d).find(".popout").addClass("cal-popout-Left")
+}}function refreshCal(){$j(".cal-transaction-popout").children(".group-trans").find(".cal-row-ht").hide();
+$j(".cal-transaction-popout").children(".group-trans").children(".detail-row").addClass("cal-row");
+$j(".cal-transaction-popout").children(".group-trans").children(".detail-row").removeClass("hide");
+$j(".cal-transaction-popout").children(".group-trans").find(".action").addClass("cal-action-top");
+$j(".cal-transaction-popout").children(".group-trans").find(".details").children("div").addClass("cal-detail-full-width cal-details");
+$j(".cal-transaction-popout").children(".group-trans").find(".detail-row .details").show();
+$j(".cal-transaction-popout").children(".group-trans").find(".action .primary-button").addClass("cal-primary-button");
+$j(".cal-transaction-popout").children(".group-trans").find(".cal-due").hide();
+$j(".cal-transaction-popout").children(".group-trans").find(".transaction-type").removeClass("cal-transaction-type");
+$j(".cal-transaction-popout").children(".group-trans").find(".title").addClass("cal-transaction-type-title")
+}function closeDelete(){$j(".cal-action-confirmbox").addClass("hide")
+}function enableSecondaryButton(){$j(".secondary-button").removeAttr("disabled");
+$j(".secondary-button").css("cursor","default")
+}function trackClickEvent3(a){s.prop3=a;
+s.linkTrackVars="prop3,eVar3,events";
+s.eVar3=s.prop3;
+s.linkTrackEvents=s.events="event3";
+s.tl(true,"o","Self Service Event Link Level Tracking")
+}function setViewDefaultFocus(){$transaction=$j(".transaction");
+if($transaction.length){$transaction.attr("tabindex","0")
+}$viewWrapper=$j(".listview-wrapper,.calendarview-wrapper");
+if($viewWrapper.length){$viewWrapper.attr("tabindex","0");
+$viewWrapper.keyup(function(a){if((a.keyCode?a.keyCode:a.which)==$j.ui.keyCode.ENTER){swithView(this)
+}})
+}}function swithView(a){$j(a).children("input[type=radio]").prop("checked",true).trigger("click")
+}function enableOverlayTriggerButton(a){if(a){var b=$j(a);
+b.removeClass("disabled-button");
+b.removeAttr("disabled");
+b.css("cursor","default")
+}}function restoreCalFocus(){$j(".calendarview-wrapper").children("input[type=radio]").focus()
+}function restoreListFocus(){$j(".listview-wrapper").children("input[type=radio]").focus()
+}function restoreDisplayFocus(){$j("#pending_select_txn_types_form\\:typeaccount").focus()
+}function restoreDisplayFocusModal(){$j("#modal_dlg_form:typeaccount-overlay:typeaccount").focus()
+}function restoreShowFocus(){$j("#pending_select_txn_types_form\\:months").focus()
+}function setOverlayMsgFocus(){if($j("ul.error").length){$j("ul.error").parent().attr("tabindex","0");
+$j("ul.warning").parent().attr("tabindex","0");
+$j(".ewa-bucketo").focus()
+}else{if($j("ul.info").length){$j("ul.info").parent().attr("tabindex","0");
+$j(".ewa-bucketo").focus()
+}}};

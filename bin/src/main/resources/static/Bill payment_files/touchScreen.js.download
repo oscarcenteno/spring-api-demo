@@ -1,0 +1,97 @@
+$j(document).ready(function(){if($j.BnsMediaTest.isTouchEnabled()){$j("body").bind("touchend",TouchUtil.touchstartBody)
+}});
+var TouchUtil={touchstartBody:function(a){touchTarget=$j(a.target);
+if(!touchTarget.parents().hasClass("quick-menu-overlay")&&$j("div.quick-menu-overlay:visible").children().length!=0){$j(".quick-menu-overlay:visible").fadeOut(800);
+$j(".quick-menu-overlay:visible").prev().trigger("click");
+$j(".quick-menu-overlay:visible").parent(".quick-menu-wrapper").find("a img").attr("alt",localized[solui.Language].OpenMenuText+$j(".quick-menu-overlay:visible").parent().children(".quick-menu").attr("title"));
+return
+}if(!touchTarget.parents().hasClass("new-quick-menu-overlay")&&$j(".new-quick-menu-overlay:visible").children().length!=0){$j(".new-quick-menu-overlay:visible").fadeOut(800);
+return
+}if(!touchTarget.parents().hasClass("ui-datepicker")&&$j(".ui-datepicker:visible").children().length!=0){$j.datepicker._checkExternalClick(a);
+$j("body").append(dPicker.dpDiv);
+return
+}if(!touchTarget.parents().hasClass("account-navigation")&&$j(".account-navigation ul ul:visible").children().length!=0){$j(".account-navigation ul ul").hide();
+return
+}if(!touchTarget.parents().hasClass("nav-ps-third-lvl")&&$j(".nav-ps-third-lvl ul li div.sub:visible").children().length!=0){$j(".nav-ps-third-lvl ul li div.sub").fadeOut(800);
+$j(".nav-ps-third-lvl ul li a.active").removeClass("active");
+return
+}}};
+jQuery.datepicker._checkExternalClick=function(b){dPicker=$j.datepicker;
+if(!dPicker._curInst){return
+}var a=$j(b.target),c=dPicker._getInst(a[0]);
+if(((a[0].id!=dPicker._mainDivId&&a.parents("#"+dPicker._mainDivId).length==0&&!a.hasClass(dPicker.markerClassName)&&!a.closest("."+dPicker._triggerClass).length&&dPicker._datepickerShowing&&!(dPicker._inDialog&&$.blockUI)))||(a.hasClass(dPicker.markerClassName)&&dPicker._curInst!=c)){if($j.BnsMediaTest.isTouchEnabled()){$j(".daterange-2-years").blur()
+}dPicker._hideDatepicker()
+}};
+jQuery.datepicker._showDatepicker=function(i){i=i.target||i;
+if(i.nodeName.toLowerCase()!="input"){i=$("input",i.parentNode)[0]
+}if($j.datepicker._isDisabledDatepicker(i)||$j.datepicker._lastInput==i){return
+}var g=$j.datepicker._getInst(i);
+if($j.datepicker._curInst&&$j.datepicker._curInst!=g){$j.datepicker._curInst.dpDiv.stop(true,true);
+if(g&&$j.datepicker._datepickerShowing){$j.datepicker._hideDatepicker($j.datepicker._curInst.input[0])
+}}var d=$j.datepicker._get(g,"beforeShow");
+var h=d?d.apply(i,[i,g]):{};
+if(h===false){return
+}extendRemove(g.settings,h);
+g.lastVal=null;
+$j.datepicker._lastInput=i;
+$j.datepicker._setDateFromField(g);
+if($j.datepicker._inDialog){i.value=""
+}if(!$j.datepicker._pos){$j.datepicker._pos=$j.datepicker._findPos(i);
+$j.datepicker._pos[1]+=i.offsetHeight
+}var c=false;
+$j(i).parents().each(function(){c|=$j(this).css("position")=="fixed";
+return !c
+});
+if(c&&$j.browser.opera){$j.datepicker._pos[0]-=document.documentElement.scrollLeft;
+$j.datepicker._pos[1]-=document.documentElement.scrollTop
+}var f={left:$j.datepicker._pos[0],top:$j.datepicker._pos[1]};
+$j.datepicker._pos=null;
+g.dpDiv.empty();
+g.dpDiv.css({position:"absolute",display:"block",top:"-1000px"});
+$j.datepicker._updateDatepicker(g);
+f=$j.datepicker._checkOffset(g,f,c);
+g.dpDiv.css({position:($j.datepicker._inDialog&&$.blockUI?"static":(c?"fixed":"absolute")),display:"none",left:f.left+"px",top:f.top+"px"});
+if(!g.inline){var a=$j.datepicker._get(g,"showAnim");
+var e=$j.datepicker._get(g,"duration");
+var b=function(){var k=g.dpDiv.find("iframe.ui-datepicker-cover");
+if(!!k.length){var j=$j.datepicker._getBorders(g.dpDiv);
+k.css({left:-j[0],top:-j[1],width:g.dpDiv.outerWidth(),height:g.dpDiv.outerHeight()})
+}};
+g.dpDiv.zIndex($j(i).zIndex()+1);
+$j.datepicker._datepickerShowing=true;
+if($j.effects&&$j.effects[a]){g.dpDiv.show(a,$j.datepicker._get(g,"showOptions"),e,b)
+}else{g.dpDiv[a||"show"]((a?e:null),b)
+}if(!a||!e){b()
+}if(g.input.is(":visible")&&!g.input.is(":disabled")){if(!$j.BnsMediaTest.isTouchEnabled()){g.input.focus()
+}else{g.input.blur()
+}}$j.datepicker._curInst=g
+}};
+jQuery.datepicker._updateDatepickerTouch=function(d){var b=this;
+var f=$j.datepicker._getBorders(d.dpDiv);
+d.dpDiv.empty().append(this._generateHTML(d)).find("iframe.ui-datepicker-cover").css({left:-f[0],top:-f[1],width:d.dpDiv.outerWidth(),height:d.dpDiv.outerHeight()}).end().find("button, .ui-datepicker-prev, .ui-datepicker-next, .ui-datepicker-calendar td a").bind("mouseout",function(){$j(this).removeClass("ui-state-hover");
+if(this.className.indexOf("ui-datepicker-prev")!=-1){$j(this).removeClass("ui-datepicker-prev-hover")
+}if(this.className.indexOf("ui-datepicker-next")!=-1){$j(this).removeClass("ui-datepicker-next-hover")
+}}).bind("mouseover",function(){if(!b._isDisabledDatepicker(d.inline?d.dpDiv.parent()[0]:d.input[0])){$j(this).parents(".ui-datepicker-calendar").find("a").removeClass("ui-state-hover");
+$j(this).addClass("ui-state-hover");
+if(this.className.indexOf("ui-datepicker-prev")!=-1){$j(this).addClass("ui-datepicker-prev-hover")
+}if(this.className.indexOf("ui-datepicker-next")!=-1){$j(this).addClass("ui-datepicker-next-hover")
+}}}).end().find("."+this._dayOverClass+" a").trigger("mouseover").end();
+var a=this._getNumberOfMonths(d);
+var e=a[1];
+var c=17;
+if(e>1){d.dpDiv.addClass("ui-datepicker-multi-"+e).css("width",(c*e)+"em")
+}else{d.dpDiv.removeClass("ui-datepicker-multi-2 ui-datepicker-multi-3 ui-datepicker-multi-4").width("")
+}d.dpDiv[(a[0]!=1||a[1]!=1?"add":"remove")+"Class"]("ui-datepicker-multi");
+d.dpDiv[(this._get(d,"isRTL")?"add":"remove")+"Class"]("ui-datepicker-rtl")
+};
+jQuery.datepicker._adjustDate=function(e,d,c){var b=$j(e);
+var a=this._getInst(b[0]);
+if(this._isDisabledDatepicker(b[0])){return
+}this._adjustInstDate(a,d+(c=="M"?this._get(a,"showCurrentAtPos"):0),c);
+if($j.BnsMediaTest.isTouchEnabled()){this._updateDatepickerTouch(a)
+}else{this._updateDatepicker(a)
+}};
+function extendRemove(c,b){$j.extend(c,b);
+for(var a in b){if(b[a]==null||b[a]==undefined){c[a]=b[a]
+}}return c
+};
