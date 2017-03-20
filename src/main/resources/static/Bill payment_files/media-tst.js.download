@@ -1,0 +1,7 @@
+(function(b,c){var a={testMediaQuery:function(d){mqFun=window.matchMedia||window.msMatchMedia;
+if(mqFun){return mqFun(d).matches
+}return false
+},isTouchEnabled:function(){return("ontouchstart" in window)||window.DocumentTouch&&document instanceof DocumentTouch
+}};
+b.BnsMediaTest=a
+})(jQuery);

@@ -1,0 +1,6 @@
+function launchHelpSearch(a){uqHiddenField=$j("form.helpLink_launch_frm > input.help_user_query");
+helpTypeHiddenField=$j("form.helpLink_launch_frm > input.help_type");
+if(uqHiddenField.length){uqHiddenField.val(a);
+helpTypeHiddenField.val("manual");
+$j("form.helpLink_launch_frm > a.help_link_submit").click()
+}};

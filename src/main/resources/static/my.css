@@ -1,0 +1,37 @@
+table {
+	margin-top: 20px;
+}
+
+td {
+	padding: 5px 10px;
+}
+
+.bp-hdg-row {
+	padding-top: 10px;
+	padding-right: 20px;
+	text-align: right;
+}
+
+.payment-submit {
+	padding-right: 30px;
+	float: right;
+}
+
+.navigation .nav-top-lvl li {
+	background-color: #CC1211;
+}
+
+.navigation .nav-sub-lvl {
+	background-color: #F6F6F6;
+}
+
+.nav-third-lvl {
+	background: url("third_menu_bg.png") repeat-x;
+}
+
+.scotia-logo-img-div-en {
+	background: url("Scotiabank-mid.png") !important;
+	width: 200px !important;
+	height: 40px !important;
+}
+
